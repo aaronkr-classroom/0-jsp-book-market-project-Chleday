@@ -3,7 +3,8 @@
 <!DOCTYPE html>
 <%@ page import = "java.util.ArrayList" %>
 <%@ page import = "dto.Book" %>
-<jsp:useBean id = "bookDAO" class = "dao.BookRepository" scope = "session"/>
+<%@ page import = "dao.BookRepository" %>
+
 <html>
 <head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -20,7 +21,8 @@
 		</div>
 	</div>
 	<%
-		ArrayList<Book> listOfBooks=bookDAO.getAllBooks();
+		BookRepository dao = BookRepository.getInstance();
+		ArrayList<Book> listOfBooks = dao.getAllBooks();
 	%>
 	
 	<div class = "row align-items-md-stretch text-center">
