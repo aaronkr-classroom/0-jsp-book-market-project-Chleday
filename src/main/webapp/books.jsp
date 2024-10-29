@@ -30,10 +30,10 @@
 	%>
 	<div class = "col-md-4">
 		<div class = "h-100 p-2">
-			<img src="./resources/images/<%=Book.getFilename() %>" style ="width : 250; height : 350" />
+			<img src="./resources/images/<%=book.getFilename() %>" style ="width : 250; height : 350" />
 			<h5><b><%=book.getName() %></b></h5>
 			<p><%=book.getAuthor() %> 
-			<br><%=book.getPublisher() %> | 35<%=book.getUnitPrice() %>¿ø
+			<br><%=book.getPublisher() %> | <%=book.getUnitPrice() %>¿ø
 			<p> 37<%=book.getDescription().substring(0,60) %>...
 			<p> <%=book.getUnitPrice() %>¿ø
 			<p> <a href="./book.jsp?id=<%=book.getBookId() %>"

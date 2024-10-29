@@ -38,10 +38,10 @@
 		<p> <b>도서코드 : </b><span class="badge text-bg-danger">
 		<%=book.getBookId() %></span>
 		<p> <b>저자</b> : <%=book.getAuthor() %>
-		<p> <b>출판사</b> : <%=book.getAuthor() %>
-		<p> <b>출판일</b> : <%=book.getAuthor() %>
-		<p> <b>분류</b> : <%=book.getAuthor() %>
-		<p> <b>재고수</b> : <%=book.getAuthor() %>
+		<p> <b>출판사</b> : <%=book.getPublisher() %>
+		<p> <b>출판일</b> : <%=book.getReleaseDate() %>
+		<p> <b>분류</b> : <%=book.getCategory() %>
+		<p> <b>재고수</b> : <%=book.getUnitsInStock() %>
 		</div>
 	</div>
 	<jsp:include page = "footer.jsp"/>
