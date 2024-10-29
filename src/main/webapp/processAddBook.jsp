@@ -69,7 +69,6 @@
 		newBook.setFilename(fileName);
 		
 		dao.addBook(newBook);
-		
 		response.sendRedirect("books.jsp");
 		
 	%>

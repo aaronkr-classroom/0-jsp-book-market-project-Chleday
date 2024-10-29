@@ -14,7 +14,6 @@
 <body>
 <div class = "container py-4">
 	<%@ include file = "menu.jsp" %>
-	
 	<div class= "p-5 mb-4 bg-body-teriary rounded-3">
 	<div class= "container-fluid py-5">
 		<h1 class= "display-5 fw-bold">도서정보</h1>
