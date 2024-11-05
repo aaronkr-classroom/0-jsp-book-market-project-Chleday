@@ -20,7 +20,7 @@
 		int maxSize=5 * 1024 * 1024;
 		String encType = "utf-8";
 		
-		// MultipartRequest multi = new MultipartRequest(request, realFolder, maxSize, encType, new DefaultFileRenamePolicy());
+		MultipartRequest multi = new MultipartRequest(request, realFolder, maxSize, encType, new DefaultFileRenamePolicy());
 		
 		String bookId=multi.getParameter("bookId");
 		String name=multi.getParameter("name");
