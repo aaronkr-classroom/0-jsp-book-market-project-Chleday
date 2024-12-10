@@ -2,8 +2,8 @@
     pageEncoding="UTF-8"%>
 <%@ page import = "java.util.ArrayList" %>
 <%@ page import = "java.net.URLDecoder" %>
-<%@ page import = "dto.Product" %>
-<%@ page import = "dao.ProductRepository" %>
+<%@ page import = "dto.Book" %>
+<%@ page import = "dao.BookRepository" %>
 <!DOCTYPE html>
 <%
 	request.setCharacterEncoding("UTF-8");
